@@ -1,0 +1,17 @@
+# Setup:
+#   pyenv install 3.12.2          # if using pyenv
+#   pyenv local 3.12.2
+#   python -m venv .venv
+#   source .venv/bin/activate     # .venv\Scripts\activate on Windows
+#   pip install -r requirements.txt
+ 
+pandas>=2.2,<3.0
+numpy>=1.26,<2.0        # numpy 2.x can break older transformers/torch combos — pin <2.0 for safety
+scikit-learn>=1.4,<2.0
+joblib>=1.3,<2.0
+ 
+torch>=2.3,<3.0
+transformers>=4.40,<5.0
+datasets>=2.19,<3.0
+accelerate>=0.30,<1.0
+ 
